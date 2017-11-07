@@ -14,9 +14,8 @@ public class AddStudentActivity extends AppCompatActivity implements AddStudentC
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        mPresenter = new AddStudentPresenter(this);
-        setPresenter(mPresenter);
+        setContentView(R.layout.activity_main)
+        setPresenter(new AddStudentPresenter(this));
         mAddStudent = findViewById(R.id.addStudent);
         mAddStudent.setOnClickListener(new View.OnClickListener() {
             @Override
